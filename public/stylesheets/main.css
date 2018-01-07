@@ -19,3 +19,28 @@
     height: 400px;
     width: 100%;
 }
+
+.imgTile {
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+}
+
+.jumbotron{
+    background-image: url(http://i.imgur.com/emvhOnb.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+#search-line {
+    width: 75%;
+    display: inline;
+}
+
+#search-btn {
+    padding: 5px 20px;
+    font-size:16px;
+    display: inline;
+    vertical-align: bottom;
+}

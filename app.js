@@ -17,15 +17,8 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes = require("./routes/index")
 
 // Connecting to Mongo DB
-mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb://adeamso83:uasay#83@ds245357.mlab.com:45357/adeyelpcamp");
-
-console.log(process.env.DATABASEURL)
-
-// const databaseUri = 'mongodb://adeamso83:uasay#83@ds245357.mlab.com:45357/adeyelpcamp';
-// mongoose.connect(databaseUri, { useMongoClient: true })
-//       .then(() => console.log(`Database connected`))
-//       .catch(err => console.log(`Database connection error: ${err.message}`));
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+mongoose.connect(url);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
