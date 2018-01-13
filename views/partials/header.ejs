@@ -32,7 +32,7 @@
               
               <% } else { %>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Signed In As <%= currentUser.username %></a>
+                    <a class="nav-link" href="#">Signed In As <span class="text-capitalize"><%= currentUser.firstName || currentUser.username %></span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/logout">Logout</a>
