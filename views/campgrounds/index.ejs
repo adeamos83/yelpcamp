@@ -5,12 +5,12 @@
             <h1>Welcome To YelpCamp!</h1>
             <p>View are hand-picked campgrounds from all over the world</p>
             <p>
-               <a href="/campgrounds/new" class="btn-primary btn-lg">Add New Campgrounds</a> 
+               <a href="/campgrounds/new" class="btn btn-camp btn-lg">Add New Campgrounds</a> 
             </p>
             <form action="/campgrounds" method="GET" class="">
                 <div class="form-group">
                     <input id ="search-line" class="form-control" type="text" name="search" placeholder="Campground search...">
-                    <input id="search-btn" class="btn btn-primary" type="submit" value="Search">
+                    <input id="search-btn" class="btn btn-camp" type="submit" value="Search">
                 </div>
             </form>
         </div>
@@ -26,18 +26,18 @@
     
     <div class="row text-center" style="display: flex; flex-wrap: wrap;">
         <% campgrounds.forEach(function(campground){ %>
-            <div class="col-md-3 col-sm-6">
-                <div class="thumbnail">
-                <img class="imgTile" src=" <%= campground.image %> ">
-                <div class="caption">
-                    <h4> <%= campground.name %> </h4>
-                </div>
-                <p>
-                    <a href="/campgrounds/<%=campground._id%>" class="btn btn-primary">More Info</a>
-                </p>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="card-deck">
+                    <div class="card box-shadow">
+                      <img class="card-img-top index-card-img" src=" <%= campground.image %> " alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title"><%= campground.name %></h5>
+                        <a href="/campgrounds/<%=campground._id%>" class="btn btn-camp">More Info</a>
+                      </div>
+                    </div>
                 </div>
             </div>
-        
+
         <% }); %>
     </div>
 

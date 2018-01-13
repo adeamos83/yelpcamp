@@ -1,3 +1,30 @@
+body {
+    background-color: #F1FAEE;
+}
+
+header {
+    margin-top: 20px;
+}
+.navbar {
+    background-color: #457B9D;
+    /*color: white;*/
+}
+
+
+.card-deck {
+    margin-bottom: 20px;
+}
+
+.card-img-top.index-card-img {
+        min-height: 152px;
+        max-height: 152px;
+}
+
+.card-img-top.camp-card-img {
+        min-height: 618px;
+        max-height: 618px;
+}
+
 .thumbnail img {
     width: 100%;
 }
@@ -44,3 +71,46 @@
     display: inline;
     vertical-align: bottom;
 }
+
+.box-shadow {
+    box-shadow: 2px 2.5px 8px #888888;
+}
+
+.camp-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-camp {
+    background-color: #457B9D;
+    border-color: #457B9D;
+    color: #fff;
+}
+
+.btn-camp:hover {
+    background-color: #33678c;
+    border-color: #33678c;
+    color: #fff;
+}
+
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .card-img-top.index-card-img {
+        min-height: 190px;
+        max-height: 190px;
+    }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }

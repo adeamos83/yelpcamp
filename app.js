@@ -29,6 +29,7 @@ app.use(flash());
 
 app.locals.moment = require("moment");
 
+
 // Passport Configuration
 app.use(require("express-session")({
    secret: "Ade is trying to learn javascript.",
