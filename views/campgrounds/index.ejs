@@ -1,21 +1,11 @@
 <%  include ../partials/header %>
     <div class="mt-2 d-flex justify-content-end">
        <a href="/campgrounds/new" class="btn btn-camp">Add New Campgrounds</a>
-       <!--<a href="/campgrounds/new" class="badge badge-primary">Add New Campgrounds</a>-->
     </div>
     <header class="jumbotron">
         <div class="text-center">
             <h1>Welcome To YelpCamp!</h1>
             <p>View are hand-picked campgrounds from all over the world</p>
-            <!--<p>-->
-            <!--   <a href="/campgrounds/new" class="btn btn-camp btn-lg">Add New Campgrounds</a> -->
-            <!--</p>-->
-            <!--<form action="/campgrounds" method="GET">-->
-            <!--    <div class="form-group">-->
-            <!--        <input id ="search-line" class="form-control" type="text" name="search" placeholder="Campground search...">-->
-            <!--        <input id="search-btn" class="btn btn-camp" type="submit" value="Search">-->
-            <!--    </div>-->
-            <!--</form>-->
         </div>
         
     </header>
@@ -26,27 +16,6 @@
             <h3>Our Most Popular Campgrounds</h3>
         </div>
     </div>
-    
-    <!--<div class="row" style="display: flex; flex-wrap: wrap;">-->
-    <!--    <% campgrounds.forEach(function(campground){ %>-->
-    <!--        <div class="col-lg-4 col-md-4 col-6">-->
-    <!--            <div class="card-deck">-->
-    <!--                <div class="card box-shadow">-->
-    <!--                  <a href="/campgrounds/<%=campground._id%>"><img class="card-img-top index-card-img" src=" <%= campground.image %> " alt="Card image cap"></a>-->
-    <!--                  <div class="card-body">-->
-    <!--                    <h5 class="card-title"><%= campground.name %></h5>-->
-    <!--                    <h6 class="card-subtitle mb-2 text-muted"><%= campground.location %></h6>-->
-    <!--                    <h6 class="card-subtitle my-2">$<%= campground.price %>.00/night</h6>-->
-    <!--                    <p class="card-text"><%= campground.description.substr(0,50) %></p>-->
-    <!--                    <a href="/campgrounds/<%=campground._id%>" class="btn btn-camp">More Info</a>-->
-    <!--                  </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-    <!--    <% }); %>-->
-    <!--</div>-->
-    
     
     <div class="row d-flex flex-wrap">
         <% campgrounds.forEach(function(campground){ %>
