@@ -39,8 +39,8 @@ body {
   animation: imageAnimation 50s linear infinite; 
 }
 
-slideshow li:nth-child(1) { 
-  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+.slideshow li:nth-child(1) { 
+  background-image: url(http://i.imgur.com/K3mPv14.jpg); 
 }
 .slideshow li:nth-child(2) { 
   background-image: url(http://i.imgur.com/SBEmFpv.jpg);
@@ -79,4 +79,16 @@ slideshow li:nth-child(1) {
 /* Older browser support - .no-cssanimations class added by modernizr */
 .no-cssanimations .slideshow li {
 	opacity: 1;
+}
+
+.btn-camp {
+    background-color: #ED5565;
+    border-color: #ED5565;
+    color: #fff;
+}
+
+.btn-camp:hover {
+    background-color: #DA4453;
+    border-color: #DA4453;
+    color: #fff;
 }
