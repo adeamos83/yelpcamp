@@ -25,9 +25,10 @@
                       <a href="/campgrounds/<%=campground._id%>"><img class="card-img-top camp-card-img" src=" <%= campground.image %> " alt="Card image cap"></a>
                       <div class="card-body">
                         <h5 class="card-title"><%= campground.name %></h5>
-                        <h6 class="card-subtitle mb-2 text-muted"><%= campground.location %></h6>
-                        <h6 class="card-subtitle my-2">$<%= campground.price %>.00/night</h6>
-                        <p class="card-text"><%= campground.description.substr(0,50) %></p>
+                        <!--<h6 class="card-subtitle mb-2 text-muted"><%= campground.location %></h6>-->
+                        <!--Uncomment to add price feature-->
+                        <!--<h6 class="card-subtitle my-2">$<%= campground.price %>.00/night</h6>-->
+                        <p class="card-text"><%= campground.description.substr(0,50) %>...</p>
                         <a href="/campgrounds/<%=campground._id%>" class="btn btn-camp">More Info</a>
                       </div>
                     </div>

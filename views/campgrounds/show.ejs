@@ -16,7 +16,8 @@
               <img class="card-img-top camp-page-img" src="<%= campground.image %>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title d-inline text-capitalize"><a><%= campground.name %></a></h5>
-                <h5 class="d-inline float-right">$<%= campground.price %>/night</h5>
+                <!--Uncomment to add price feature-->
+                <!--<h5 class="d-inline float-right">$<%= campground.price %>/night</h5>-->
                 <p class="card-text"><%= campground.description %></p>
                 <p><em>Submitted by: <a href="/users/<%=campground.author.id%>" class="text-capitalize"><%= campground.author.username%></a>, <%= moment(campground.createdAt).fromNow() %></em></p>
                     <% if(currentUser && campground.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
