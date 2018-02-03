@@ -90,7 +90,16 @@ header {
     width: 100%;
 }
 
+/* User Page */
 
+.avatar-img {
+    width: 200px;
+}
+
+.avatar-border {
+    border-radius: 50%!important;
+    border: 3px solid #e2e2e2!important;
+}
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {

@@ -67,9 +67,9 @@ router.get("/logout", function(req, res){
 //  User Profiles
 router.get("/users/:id", function(req, res){
    User.findById(req.params.id, function(err, foundUser){
-       if(err){
+       if(err || !foundUser){
            req.flash("error", err.message);
-           res.redirect("/");
+           return res.redirect("/");
        } 
        Campground.find().where("author.id").equals(foundUser._id).exec(function(err, campgrounds){
            if(err){
@@ -80,5 +80,33 @@ router.get("/users/:id", function(req, res){
        });
    }); 
 });
+
+// // User Profile Edit Route
+
+// router.get("/users/:id/edit", function(req, res){
+//     User.findById(req.params.id, function(err, foundUser){
+//         if(err){
+//             req.flash("error", err.message);
+//             res.redirect("/");
+//         } else {
+//             res.render("users/edit", {user: foundUser});
+//         }
+//     })
+
+// });
+
+// // User Profile Update Route
+
+// router.put("/users/:id", function(req, res){
+//     User.findByIdAndUpdate(req.params.id, req.body.user, function(err, updatedUser){
+//         if(err){
+//             req.flash("error", err.message);
+//             res.redirect("/");
+//         } else {
+//             req.flash("success", "Successfully Updated Profile!")
+//             res.redirect("/users/" + req.params.id)
+//         }
+//     })
+// })
 
 module.exports = router;
