@@ -1,32 +1,34 @@
 <% include ./partials/header %>
 
-<div style="width: 50%; margin: 25px auto;">
-           <div class="card mb-3">
-               <div class="card-header">
-                   <h1 class="text-center">Login</h1>
+<div class="row justify-content-center mt-5">
+    <div class="col-12 col-md-9 col-lg-7">
+       <div class="card mb-3">
+           <div class="card-header">
+               <h1 class="text-center">Login</h1>
+           </div>
+          <div class="card-body">
+            <form action="/login" method="POST">
+               <div class="form-row">
+                   <div class="form-group col-md-8 mx-auto">
+                       <label>Username</label>
+                        <input class="form-control" type="text" name="username" placeholder="username">
+                   </div>
                </div>
-              <div class="card-body">
-                <form action="/login" method="POST">
-                   <div class="form-row">
-                       <div class="form-group col-md-8 mx-auto">
-                           <label>Username</label>
-                            <input class="form-control" type="text" name="username" placeholder="username">
-                       </div>
+               <div class="form-row">
+                   <div class="form-group col-md-8 mx-auto">
+                        <label>Password</label>
+                        <input class="form-control" type="password" name="password" placeholder="password">
                    </div>
-                   <div class="form-row">
-                       <div class="form-group col-md-8 mx-auto">
-                            <label>Password</label>
-                            <input class="form-control" type="password" name="password" placeholder="password">
-                       </div>
-                   </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-4 mx-auto">
-                            <button class="btn btn-camp btn-lg btn-block">Login</button>
-                        </div>
+               </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4 mx-auto">
+                        <button class="btn btn-camp btn-lg btn-block">Login</button>
                     </div>
-                </form>
-              </div>
-            </div>
+                </div>
+            </form>
+          </div>
         </div>
+    </div>
+</div>
         
 <% include ./partials/footer %>

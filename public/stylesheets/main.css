@@ -108,6 +108,9 @@ header {
     /*    max-height: 250px;*/
     /*    width: 100%;*/
     /*}*/
+    h1 {
+        font-size: 2rem;
+    }
      #my-search {
     width: 94vw;
     }
@@ -124,6 +127,9 @@ header {
 }
 
 @media (max-width: 575.98px) {
+    h1{
+        font-size: 1.7rem;
+    }
     h3 {
         font-size: 1.5rem;
     }
@@ -132,6 +138,10 @@ header {
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
     #my-search {
     width: 45vw;
     }
@@ -162,6 +172,9 @@ header {
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+   h1{
+       font-size: 2.2rem;
+   }
     #my-search {
     width: 55vw;
     }
